@@ -139,26 +139,49 @@ function generatePools() {
     }
     var htmlContent = '';
     var characterLine = '';
-    allPoolsKeys = Object.keys(allPools).sort();
     allPools["BOSS"] = bossPool;
-    allPoolsKeys.push("BOSS");
-    allPoolsKeys.forEach(function(poolName) {
-        allPools[poolName].forEach(function(aCharacter) {
-            characterLine = '';
-            characterLine = '<tr><td>' + aCharacter.Name + '</td>';
-            characterLine += '<td>' + (aCharacter.Category === "COMBINED" ? "YES" : "NO") + "</td>";
-            if (aCharacter.Category === "COMBINED") {
-                characterLine += '<td>' + aCharacter.OriginalTop.Name + "</td>";
-                characterLine += '<td>' + aCharacter.OriginalBottom.Name + "</td>";
-            } else {
-                characterLine += '<td></td><td></td>';
-            }
-            characterLine += '</tr>';
-            htmlContent += characterLine;
-        });
-        $('#' + poolName + 'Table').append(htmlContent);
-        htmlContent = '';
+    GAMELIST.forEach(function(element) {
+        var capsElement = element.toUpperCase();
+        var nextCharacter = allPools[capsElement].pop();
+        characterLine = '';
+        if (nextCharacter.Page) {
+            characterLine = '<tr><td><a href="' + nextCharacter.Page + '" target="_blank">' + nextCharacter.Name + '</a<</td>';
+        } else {
+            characterLine = '<tr><td>' + nextCharacter.Name + '</td>';
+        }
+        characterLine += '<td>' + element + '</td>';
+        characterLine += '<td>' + (nextCharacter.Category === "COMBINED" ? "YES" : "NO") + "</td>";
+        if (nextCharacter.Category === "COMBINED") {
+            characterLine += '<td>' + nextCharacter.OriginalTop.Name + "</td>";
+            characterLine += '<td>' + nextCharacter.OriginalBottom.Name + "</td>";
+        } else {
+            characterLine += '<td></td><td></td>';
+        }
+        characterLine += '</tr>';
+        htmlContent += characterLine;
     });
+    $('#GAMETable').append(htmlContent);
+
+    // allPoolsKeys = Object.keys(allPools).sort();
+    // allPools["BOSS"] = bossPool;
+    // allPoolsKeys.push("BOSS");
+    // allPoolsKeys.forEach(function(poolName) {
+    //     allPools[poolName].forEach(function(aCharacter) {
+    //         characterLine = '';
+    //         characterLine = '<tr><td>' + aCharacter.Name + '</td>';
+    //         characterLine += '<td>' + (aCharacter.Category === "COMBINED" ? "YES" : "NO") + "</td>";
+    //         if (aCharacter.Category === "COMBINED") {
+    //             characterLine += '<td>' + aCharacter.OriginalTop.Name + "</td>";
+    //             characterLine += '<td>' + aCharacter.OriginalBottom.Name + "</td>";
+    //         } else {
+    //             characterLine += '<td></td><td></td>';
+    //         }
+    //         characterLine += '</tr>';
+    //         htmlContent += characterLine;
+    //     });
+    //     $('#' + poolName + 'Table').append(htmlContent);
+    //     htmlContent = '';
+    // });
 
     $('.allresults').attr('hidden', false);
 

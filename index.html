@@ -7,7 +7,7 @@
 <html>
 
 <head>
-	<title>Skylander Team Generator</title>
+	<title>Skylander Element Relay Randomizer</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -24,7 +24,7 @@
 
 				<!-- Header -->
 				<header id="header">
-					<a href="index.html" class="logo"><strong>Skylander Team Generator</strong> by Ken Walker</a>
+					<a href="index.html" class="logo"><strong>Skylander Element Relay Randomizer</strong> by Ken Walker</a>
 					<ul class="icons">
 						<li><a href="https://twitter.com/kwalker" class="icon brands fa-twitter"><span
 									class="label">Twitter</span></a></li>
@@ -37,12 +37,12 @@
 				<section id="banner">
 					<div class="content">
 						<header>
-							<h2>Skylander team generator</h2>
+							<h2>Skylander Element Relay Randomizer</h2>
 							<!-- <p>Generate a random Skylander team for speed running</p> -->
 						</header>
-						<p>Press the button below to generate a random team from the elements</p>
+						<p>Press the button below to generate a random relay from the elements</p>
 						<ul class="actions">
-							<li><a href="#" onclick="generatePools();return false;" class="button big">Generate Team</a></li>
+							<li><a href="#" onclick="generatePools();return false;" class="button big">Generate Relay</a></li>
 						</ul>
 					</div>
 					<!-- <span class="image object">
@@ -51,8 +51,18 @@
 				</section>
 
 				<div class="allresults" hidden>
-					<h2 class="smallbottommargin">Air Pool</h2>
-					<!-- <button class="noprint smallbottommargin primary icon fa-copy" onclick="copyCrownToClipboard()">Copy Crown candidates to CSV</button> -->
+					<h2 class="smallbottommargin">Element Relay</h2>
+					<table id="GAMETable" style="width:100%">
+						<tr>
+							<th class='left'>Name</th>
+							<th class='left'>Element</th>
+							<th class='left'>Combined</th>
+							<th class='left'>First</th>
+							<th class='left'>Seccond</th>
+						</tr>
+					</table>
+
+					<!-- <h2 class="smallbottommargin">Air Pool</h2>
 					<table id="AIRTable" style="width:100%">
 						<tr>
 							<th class='left'>Name</th>
@@ -63,7 +73,6 @@
 					</table>
 
 					<h2 class="smallbottommargin">Earth Pool</h2>
-					<!-- <button class="noprint smallbottommargin primary icon fa-copy" onclick="copyCrownToClipboard()">Copy Crown candidates to CSV</button> -->
 					<table id="EARTHTable" style="width:100%">
 						<tr>
 							<th class='left'>Name</th>
@@ -74,7 +83,6 @@
 					</table>
 
 					<h2 class="smallbottommargin">Fire Pool</h2>
-					<!-- <button class="noprint smallbottommargin primary icon fa-copy" onclick="copyCrownToClipboard()">Copy Crown candidates to CSV</button> -->
 					<table id="FIRETable" style="width:100%">
 						<tr>
 							<th class='left'>Name</th>
@@ -86,7 +94,6 @@
 
 
 					<h2 class="smallbottommargin">Life Pool</h2>
-					<!-- <button class="noprint smallbottommargin primary icon fa-copy" onclick="copyCrownToClipboard()">Copy Crown candidates to CSV</button> -->
 					<table id="LIFETable" style="width:100%">
 						<tr>
 							<th class='left'>Name</th>
@@ -98,7 +105,6 @@
 
 
 					<h2 class="smallbottommargin">Magic Pool</h2>
-					<!-- <button class="noprint smallbottommargin primary icon fa-copy" onclick="copyCrownToClipboard()">Copy Crown candidates to CSV</button> -->
 					<table id="MAGICTable" style="width:100%">
 						<tr>
 							<th class='left'>Name</th>
@@ -110,7 +116,6 @@
 
 
 					<h2 class="smallbottommargin">Tech Pool</h2>
-					<!-- <button class="noprint smallbottommargin primary icon fa-copy" onclick="copyCrownToClipboard()">Copy Crown candidates to CSV</button> -->
 					<table id="TECHTable" style="width:100%">
 						<tr>
 							<th class='left'>Name</th>
@@ -122,7 +127,6 @@
 
 
 					<h2 class="smallbottommargin">Undead Pool</h2>
-					<!-- <button class="noprint smallbottommargin primary icon fa-copy" onclick="copyCrownToClipboard()">Copy Crown candidates to CSV</button> -->
 					<table id="UNDEADTable" style="width:100%">
 						<tr>
 							<th class='left'>Name</th>
@@ -134,7 +138,6 @@
 
 
 					<h2 class="smallbottommargin">Water Pool</h2>
-					<!-- <button class="noprint smallbottommargin primary icon fa-copy" onclick="copyCrownToClipboard()">Copy Crown candidates to CSV</button> -->
 					<table id="WATERTable" style="width:100%">
 						<tr>
 							<th class='left'>Name</th>
@@ -144,7 +147,6 @@
 						</tr>
 					</table>
 					<h2 class="smallbottommargin">Boss Pool</h2>
-					<!-- <button class="noprint smallbottommargin primary icon fa-copy" onclick="copyCrownToClipboard()">Copy Crown candidates to CSV</button> -->
 					<table id="BOSSTable" style="width:100%">
 						<tr>
 							<th class='left'>Name</th>
@@ -152,7 +154,7 @@
 							<th class='left'>First</th>
 							<th class='left'>Seccond</th>
 						</tr>
-					</table>
+					</table> -->
 				</div>
 			</div>
 		</div>

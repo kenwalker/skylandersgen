@@ -10,8 +10,8 @@ var swapCharacters = [
         Name: "Free Ranger",
         Element: "AIR",
         Category: "SWAP",
-        Image: "",
-        Page: "",
+        Image: "https://670kg2vddm296bnc42jcfvol-wpengine.netdna-ssl.com/wp-content/uploads/2013/06/FreeRanger.png",
+        Page: "https://skylanderscharacterlist.com/free-ranger/",
     },
     {
         Name: "Doom Stone",
@@ -125,43 +125,43 @@ var characters = [
         Name: "Scratch",
         Element: "AIR",
         Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Image: "https://670kg2vddm296bnc42jcfvol-wpengine.netdna-ssl.com/wp-content/uploads/2013/10/Scratch.png",
+        Page: "https://skylanderscharacterlist.com/scratch/"
     },
     {
-        Name: "Jet Vac",
+        Name: "Jet-Vac",
         Element: "AIR",
         Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Image: "https://670kg2vddm296bnc42jcfvol-wpengine.netdna-ssl.com/wp-content/uploads/2013/02/JetVac.png",
+        Page: "https://skylanderscharacterlist.com/jet-vac/"
     },
     {
         Name: "Swarm",
         Element: "AIR",
         Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Image: "https://670kg2vddm296bnc42jcfvol-wpengine.netdna-ssl.com/wp-content/uploads/2013/02/Swarm.png",
+        Page: "https://skylanderscharacterlist.com/swarm/"
     },
     {
         Name: "Lightning Rod",
         Element: "AIR",
         Category: "REGULAR",
         Image: "",
-        Page: ""
+        Page: "https://skylanderscharacterlist.com/lightning-rod-series-2/"
     },
     {
         Name: "Sonic Boom",
         Element: "AIR",
         Category: "REGULAR",
         Image: "",
-        Page: ""
+        Page: "https://skylanderscharacterlist.com/sonic-boom-series-2/"
     },
     {
         Name: "Warnado",
         Element: "AIR",
         Category: "REGULAR",
         Image: "",
-        Page: ""
+        Page: "https://skylanderscharacterlist.com/warnado-series-1/"
     },
     {
         Name: "Whirlwind",
@@ -175,7 +175,7 @@ var characters = [
         Element: "EARTH",
         Category: "REGULAR",
         Image: "",
-        Page: ""
+        Page: "https://skylanderscharacterlist.com/whirlwind-series-2/"
     },
     {
         Name: "Crusher",
@@ -595,6 +595,55 @@ var POOL_COUNTS = [
     },
     {
         Pool: "MAGIC",
-        Count: 5
+        Count: 6
     }
+];
+
+var GAMELIST = [
+    "Fire",
+    "Earth",
+    "Water",
+    "Air",
+    "Life",
+    "Magic",
+    "Air",
+    "Fire",
+    "Tech",
+    "Magic",
+    "Water",
+    "Air",
+    "Life",
+    "Fire",
+    "Earth",
+    "Undead",
+    "Boss",
+    "Magic",
+    "Fire",
+    "Undead",
+    "Magic",
+    "Life",
+    "Earth",
+    "Tech",
+    "Fire",
+    "Magic",
+    "Boss",
+    "Water",
+    "Air",
+    "Tech",
+    "Water",
+    "Earth",
+    "Water",
+    "Undead",
+    "Boss",
+    "Magic",
+    "Life",
+    "Fire",
+    "Earth",
+    "Undead",
+    "Water",
+    "Life",
+    "Air",
+    "Tech",
+    "Boss",
+    "Boss"
 ];
