@@ -595,6 +595,6 @@ var POOL_COUNTS = [
     },
     {
         Pool: "MAGIC",
-        Count: 6
+        Count: 5
     }
 ];
