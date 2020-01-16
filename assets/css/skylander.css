@@ -1,0 +1,15 @@
+@media print {
+    #header {
+      border-bottom-width: 0;
+      padding: unset !important;
+    }
+    #banner {
+        padding: unset !important;
+    }
+    .noprint {
+      display: none;
+    }
+    .noprintpadding {
+      padding-top: 0px;
+    }
+  }

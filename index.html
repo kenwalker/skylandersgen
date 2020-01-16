@@ -11,6 +11,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/skylander.css" />
 </head>
 
 <body class="is-preload">
@@ -23,9 +24,9 @@
 			<div class="inner">
 
 				<!-- Header -->
-				<header id="header">
-					<a href="index.html" class="logo"><strong>Skylander Element Relay Randomizer</strong> by Ken Walker</a>
-					<ul class="icons">
+				<header id="header" class="noprint">
+					<a href="index.html" class="logo noprint"><strong>Skylander Element Relay Randomizer</strong> by Ken Walker</a>
+					<ul class="icons noprint">
 						<li><a href="https://twitter.com/kwalker" class="icon brands fa-twitter"><span
 									class="label">Twitter</span></a></li>
 						<li><a href="https://github.com/kenwalker/skylandersgen" class="icon brands fa-github"><span
@@ -34,8 +35,8 @@
 				</header>
 
 				<!-- Banner -->
-				<section id="banner">
-					<div class="content">
+				<section id="banner" class="noprint">
+					<div class="content noprint">
 						<header>
 							<h2>Skylander Element Relay Randomizer</h2>
 							<!-- <p>Generate a random Skylander team for speed running</p> -->
@@ -51,7 +52,9 @@
 				</section>
 
 				<div class="allresults" hidden>
-					<h2 class="smallbottommargin">Element Relay</h2>
+					<h2 class="smallbottommargin noprint">Element Relay</h2>
+					<button class="noprint smallbottommargin primary icon fa-copy" onclick="copyRelayToClipboard()">Copy results to clipboard</button>
+					<p class="noprint"></p>
 					<table id="GAMETable" style="width:100%">
 						<tr>
 							<th class='left'>Name</th>
@@ -160,7 +163,7 @@
 		</div>
 
 		<!-- Sidebar -->
-		<div id="sidebar">
+		<div id="sidebar" class="noprint">
 			<div class="inner">
 
 				<!-- Search -->

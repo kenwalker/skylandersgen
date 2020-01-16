@@ -1,3 +1,4 @@
+var relayContent = '';
 
 function generatePools() {
     $('table').find('tr:gt(0)').remove();
@@ -7,19 +8,19 @@ function generatePools() {
     // Create a full list of pools to generate to pick from at random
     // Does not include the BOSS pool which is done after all other pools chosen.
     poolsLeft = [];
-    POOL_COUNTS.forEach(function(aPool) {
-        for (var i=0; i<aPool.Count; i++) {
+    POOL_COUNTS.forEach(function (aPool) {
+        for (var i = 0; i < aPool.Count; i++) {
             poolsLeft.push(aPool.Pool);
         }
     });
 
     // Do a deep combination of all possible half characters to include in the random pick
-    swapCharacters.forEach(function(item, index) {
+    swapCharacters.forEach(function (item, index) {
         allCharacters.push(item);
         var topName = item.Name.split(" ")[0];
         var bottomName = item.Name.split(" ")[1];
         if (index < swapCharacters.length - 1) {
-            swapCharacters.slice(index + 1).forEach(function(paired) {
+            swapCharacters.slice(index + 1).forEach(function (paired) {
                 var pairedTopName = paired.Name.split(" ")[0];
                 var pairedBottomName = paired.Name.split(" ")[1];
                 allCharacters.push({
@@ -63,16 +64,22 @@ function generatePools() {
     while (poolsLeft.length > 0) {
         var nextIndex = Math.floor(Math.random() * poolsLeft.length);
         var nextElement = poolsLeft[nextIndex];
-        var filterByElement = allCharacters.filter(function(character) {
-            return character.Element === nextElement;
-        });
-        var nextCharacterIndex = Math.floor(Math.random() * filterByElement.length);
+        var nextCharacterIndex, nextCharacter;
+        if (nextElement !== "BOSS") {
+            var filterByElement = allCharacters.filter(function (character) {
+                return character.Element === nextElement;
+            });
+            nextCharacterIndex = Math.floor(Math.random() * filterByElement.length);
+            nextCharacter = filterByElement[nextCharacterIndex];
+        } else {
+            nextCharacterIndex = Math.floor(Math.random() * allCharacters.length);
+            nextCharacter = allCharacters[nextCharacterIndex];
+        }
         if (!allPools[nextElement]) {
             allPools[nextElement] = [];
         }
-        var nextCharacter = filterByElement[nextCharacterIndex];
         allPools[nextElement].push(nextCharacter);
-        allCharacters = allCharacters.filter(function(item) {
+        allCharacters = allCharacters.filter(function (item) {
             if (item === nextCharacter) {
                 return false;
             }
@@ -86,7 +93,6 @@ function generatePools() {
                 return true;
             }
             if (nextCharacter.Category === "COMBINED" && item.Category === "COMBINED") {
-                // console.log("COMBINED INCLUDE: " + item.OriginalTop !== nextCharacter.OriginalTop && item.OriginalBottom !== nextCharacter.OriginalBottom);
                 if (item.OriginalTop === nextCharacter.OriginalTop) {
                     return false;
                 }
@@ -103,86 +109,51 @@ function generatePools() {
         poolsLeft.splice(nextIndex, 1);
     }
 
-    bossPool = [];
-    for (var j=0; j<5; j++) {
-        var nextCharacterIndex = Math.floor(Math.random() * allCharacters.length);
-        var nextCharacter = allCharacters[nextCharacterIndex];
-        bossPool.push(nextCharacter);
-        allCharacters = allCharacters.filter(function(item) {
-            if (item === nextCharacter) {
-                return false;
-            }
-            if (nextCharacter.Category === "SWAP" && item.Category === "COMBINED") {
-                if (nextCharacter === nextCharacter.OriginalTop) {
-                    return false;
-                }
-                if (nextCharacter === nextCharacter.OriginalBottom) {
-                    return false;
-                }
-                return true;
-            }
-            if (nextCharacter.Category === "COMBINED" && item.Category === "COMBINED") {
-                // console.log("COMBINED INCLUDE: " + item.OriginalTop !== nextCharacter.OriginalTop && item.OriginalBottom !== nextCharacter.OriginalBottom);
-                if (item.OriginalTop === nextCharacter.OriginalTop) {
-                    return false;
-                }
-                if (item.OriginalBottom === nextCharacter.OriginalBottom) {
-                    return false;
-                }
-                return true;
-            }
-            if (nextCharacter.Category === "COMBINED") {
-                return nextCharacter.OriginalTop !== item && nextCharacter.OriginalBottom !== item;
-            }
-            return true;
-        });
-    }
     var htmlContent = '';
+    var characterHTMLLine = '';
     var characterLine = '';
-    allPools["BOSS"] = bossPool;
-    GAMELIST.forEach(function(element) {
+    relayContent = '';
+    GAMELIST.forEach(function (element) {
         var capsElement = element.toUpperCase();
         var nextCharacter = allPools[capsElement].pop();
+        characterHTMLLine = '';
         characterLine = '';
-        if (nextCharacter.Page) {
-            characterLine = '<tr><td><a href="' + nextCharacter.Page + '" target="_blank">' + nextCharacter.Name + '</a<</td>';
-        } else {
-            characterLine = '<tr><td>' + nextCharacter.Name + '</td>';
-        }
-        characterLine += '<td>' + element + '</td>';
-        characterLine += '<td>' + (nextCharacter.Category === "COMBINED" ? "YES" : "NO") + "</td>";
+        characterHTMLLine = '<tr><td>' + nextCharacter.Name + '</td>';
+        characterLine += nextCharacter.Name + '\t';
+        characterHTMLLine += '<td>' + element + '</td>';
+        characterLine += element + '\t';
+        characterHTMLLine += '<td>' + (nextCharacter.Category === "COMBINED" ? "YES" : "NO") + "</td>";
+        characterLine += (nextCharacter.Category === "COMBINED" ? "YES" : "NO") + "\t";
         if (nextCharacter.Category === "COMBINED") {
-            characterLine += '<td>' + nextCharacter.OriginalTop.Name + "</td>";
-            characterLine += '<td>' + nextCharacter.OriginalBottom.Name + "</td>";
+            characterHTMLLine += '<td>' + nextCharacter.OriginalTop.Name + "</td>";
+            characterLine += nextCharacter.OriginalTop.Name + "\t";
+            characterHTMLLine += '<td>' + nextCharacter.OriginalBottom.Name + "</td>";
+            characterLine += nextCharacter.OriginalBottom.Name + "\t";
         } else {
-            characterLine += '<td></td><td></td>';
+            characterHTMLLine += '<td></td><td></td>';
+            characterLine += '\t\t';
         }
-        characterLine += '</tr>';
-        htmlContent += characterLine;
+        characterHTMLLine += '</tr>';
+        characterLine += '\r\n';
+        htmlContent += characterHTMLLine;
+        relayContent += characterLine;
     });
     $('#GAMETable').append(htmlContent);
 
-    // allPoolsKeys = Object.keys(allPools).sort();
-    // allPools["BOSS"] = bossPool;
-    // allPoolsKeys.push("BOSS");
-    // allPoolsKeys.forEach(function(poolName) {
-    //     allPools[poolName].forEach(function(aCharacter) {
-    //         characterLine = '';
-    //         characterLine = '<tr><td>' + aCharacter.Name + '</td>';
-    //         characterLine += '<td>' + (aCharacter.Category === "COMBINED" ? "YES" : "NO") + "</td>";
-    //         if (aCharacter.Category === "COMBINED") {
-    //             characterLine += '<td>' + aCharacter.OriginalTop.Name + "</td>";
-    //             characterLine += '<td>' + aCharacter.OriginalBottom.Name + "</td>";
-    //         } else {
-    //             characterLine += '<td></td><td></td>';
-    //         }
-    //         characterLine += '</tr>';
-    //         htmlContent += characterLine;
-    //     });
-    //     $('#' + poolName + 'Table').append(htmlContent);
-    //     htmlContent = '';
-    // });
-
     $('.allresults').attr('hidden', false);
+}
 
+function copyTextToClipboard(str) {
+    var el = document.createElement('textarea');
+    el.value = str;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+}
+
+function copyRelayToClipboard() {
+    var allCSV = 'Name\tElement\tCombined\tFirst\tSecond\r\n';
+    allCSV += relayContent;
+    copyTextToClipboard(allCSV);
 }

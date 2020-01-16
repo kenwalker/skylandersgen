@@ -2,114 +2,82 @@ var swapCharacters = [
     {
         Name: "Boom Jet",
         Element: "AIR",
-        Category: "SWAP",
-        Image: "https://670kg2vddm296bnc42jcfvol-wpengine.netdna-ssl.com/wp-content/uploads/2014/02/BoomJet.png",
-        Page: "https://skylanderscharacterlist.com/boom-jet/"
+        Category: "SWAP"
     },
     {
         Name: "Free Ranger",
         Element: "AIR",
-        Category: "SWAP",
-        Image: "https://670kg2vddm296bnc42jcfvol-wpengine.netdna-ssl.com/wp-content/uploads/2013/06/FreeRanger.png",
-        Page: "https://skylanderscharacterlist.com/free-ranger/",
+        Category: "SWAP"
     },
     {
         Name: "Doom Stone",
         Element: "EARTH",
-        Category: "SWAP",
-        Image: "",
-        Page: "",
+        Category: "SWAP"
     },
     {
         Name: "Rubble Rouser",
         Element: "EARTH",
-        Category: "SWAP",
-        Image: "",
-        Page: "",
+        Category: "SWAP"
     },
     {
         Name: "Blast Zone",
         Element: "FIRE",
-        Category: "SWAP",
-        Image: "",
-        Page: "",
+        Category: "SWAP"
     },
     {
         Name: "Fire Kraken",
         Element: "FIRE",
-        Category: "SWAP",
-        Image: "",
-        Page: "",
+        Category: "SWAP"
     },
     {
         Name: "Grilla Drilla",
         Element: "LIFE",
-        Category: "SWAP",
-        Image: "",
-        Page: "",
+        Category: "SWAP"
     },
     {
         Name: "Stink Bomb",
         Element: "LIFE",
-        Category: "SWAP",
-        Image: "",
-        Page: "",
+        Category: "SWAP"
     },
     {
         Name: "Hoot Loop",
         Element: "MAGIC",
-        Category: "SWAP",
-        Image: "",
-        Page: "",
+        Category: "SWAP"
     },
     {
         Name: "Trap Shadow",
         Element: "MAGIC",
-        Category: "SWAP",
-        Image: "",
-        Page: "",
+        Category: "SWAP"
     },
     {
         Name: "Magna Charge",
         Element: "TECH",
-        Category: "SWAP",
-        Image: "",
-        Page: "",
+        Category: "SWAP"
     },
     {
         Name: "Spy Rise",
         Element: "TECH",
-        Category: "SWAP",
-        Image: "",
-        Page: "",
+        Category: "SWAP"
     },
     {
         Name: "Rattle Shake",
         Element: "UNDEAD",
-        Category: "SWAP",
-        Image: "",
-        Page: "",
+        Category: "SWAP"
     },
     {
         Name: "Night Shift",
         Element: "UNDEAD",
-        Category: "SWAP",
-        Image: "",
-        Page: "",
+        Category: "SWAP"
     },
     {
         Name: "Wash Buckler",
         Element: "WATER",
-        Category: "SWAP",
-        Image: "",
-        Page: "",
+        Category: "SWAP"
     },
     {
         Name: "Freeze Blade",
         Element: "WATER",
-        Category: "SWAP",
-        Image: "",
-        Page: "",
+        Category: "SWAP"
     }
 ];
 
@@ -117,450 +85,322 @@ var characters = [
     {
         Name: "Pop Thorn",
         Element: "AIR",
-        Category: "REGULAR",
-        Image: "https://670kg2vddm296bnc42jcfvol-wpengine.netdna-ssl.com/wp-content/uploads/2013/12/Popthorn.png",
-        Page: "https://skylanderscharacterlist.com/pop-thorn/"
+        Category: "REGULAR"
     },
     {
         Name: "Scratch",
         Element: "AIR",
-        Category: "REGULAR",
-        Image: "https://670kg2vddm296bnc42jcfvol-wpengine.netdna-ssl.com/wp-content/uploads/2013/10/Scratch.png",
-        Page: "https://skylanderscharacterlist.com/scratch/"
+        Category: "REGULAR"
     },
     {
         Name: "Jet-Vac",
         Element: "AIR",
-        Category: "REGULAR",
-        Image: "https://670kg2vddm296bnc42jcfvol-wpengine.netdna-ssl.com/wp-content/uploads/2013/02/JetVac.png",
-        Page: "https://skylanderscharacterlist.com/jet-vac/"
+        Category: "REGULAR"
     },
     {
         Name: "Swarm",
         Element: "AIR",
-        Category: "REGULAR",
-        Image: "https://670kg2vddm296bnc42jcfvol-wpengine.netdna-ssl.com/wp-content/uploads/2013/02/Swarm.png",
-        Page: "https://skylanderscharacterlist.com/swarm/"
+        Category: "REGULAR"
     },
     {
         Name: "Lightning Rod",
         Element: "AIR",
-        Category: "REGULAR",
-        Image: "",
-        Page: "https://skylanderscharacterlist.com/lightning-rod-series-2/"
+        Category: "REGULAR"
     },
     {
         Name: "Sonic Boom",
         Element: "AIR",
-        Category: "REGULAR",
-        Image: "",
-        Page: "https://skylanderscharacterlist.com/sonic-boom-series-2/"
+        Category: "REGULAR"
     },
     {
         Name: "Warnado",
         Element: "AIR",
-        Category: "REGULAR",
-        Image: "",
-        Page: "https://skylanderscharacterlist.com/warnado-series-1/"
+        Category: "REGULAR"
     },
     {
         Name: "Whirlwind",
         Element: "AIR",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Flashwing",
         Element: "EARTH",
-        Category: "REGULAR",
-        Image: "",
-        Page: "https://skylanderscharacterlist.com/whirlwind-series-2/"
+        Category: "REGULAR"
     },
     {
         Name: "Crusher",
         Element: "EARTH",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Bash",
         Element: "EARTH",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Dino-rang",
         Element: "EARTH",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Prism Break",
         Element: "EARTH",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Terrafin",
         Element: "EARTH",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Scorp",
         Element: "EARTH",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Slobber Tooth",
         Element: "EARTH",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Smolderdash",
         Element: "FIRE",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Fryno",
         Element: "FIRE",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Hot Dog",
         Element: "FIRE",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Hot Head",
         Element: "FIRE",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Eruptor",
         Element: "FIRE",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Ignitor",
         Element: "FIRE",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Flameslinger",
         Element: "FIRE",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Sunburn",
         Element: "FIRE",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Bumble Blast",
         Element: "LIFE",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Zoo Lou",
         Element: "LIFE",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Shroomboom",
         Element: "LIFE",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Tree Rex",
         Element: "LIFE",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Stealth Elf",
         Element: "LIFE",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Zook",
         Element: "LIFE",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Stump Smash",
         Element: "LIFE",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Camp",
         Element: "LIFE",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Dune Bug",
         Element: "MAGIC",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Star Strike",
         Element: "MAGIC",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Ninjini",
         Element: "MAGIC",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Pop Fizz",
         Element: "MAGIC",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Double Trouble",
         Element: "MAGIC",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Spyro",
         Element: "MAGIC",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Voodood",
         Element: "MAGIC",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Wrecking Ball",
         Element: "MAGIC",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Countdown",
         Element: "TECH",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Wind-Up",
         Element: "TECH",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Bouncer",
         Element: "TECH",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Sprocket",
         Element: "TECH",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Drill Sergeant",
         Element: "TECH",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Drobot",
         Element: "TECH",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Trigger Happy",
         Element: "TECH",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Boomer",
         Element: "TECH",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Grim Creeper",
         Element: "UNDEAD",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Roller Brawl",
         Element: "UNDEAD",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Eye-Brawl",
         Element: "UNDEAD",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Fright Rider",
         Element: "UNDEAD",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Chop Chop",
         Element: "UNDEAD",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Cynder",
         Element: "UNDEAD",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Ghost Roaster",
         Element: "UNDEAD",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Hex",
         Element: "UNDEAD",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Rip Tide",
         Element: "WATER",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Punk Shock",
         Element: "WATER",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Chill",
         Element: "WATER",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Thumpback",
         Element: "WATER",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Gill Grunt",
         Element: "WATER",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Slam Bam",
         Element: "WATER",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Wham-Shell",
         Element: "WATER",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     },
     {
         Name: "Zap",
         Element: "WATER",
-        Category: "REGULAR",
-        Image: "",
-        Page: ""
+        Category: "REGULAR"
     }
 ];
 
@@ -596,6 +436,10 @@ var POOL_COUNTS = [
     {
         Pool: "MAGIC",
         Count: 6
+    },
+    {
+        Pool: "BOSS",
+        Count: 5
     }
 ];
 
