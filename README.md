@@ -1,4 +1,4 @@
 # skylandersgen
 Skylander Element Relay Randomizer.
 
-Go to the [Skylander Element Relay Randomizer](Skylander Element Relay Randomizer) page to generate a random Relay
+Go to the [Skylander Element Relay Randomizer](https://kenwalker.github.io/skylandersgen/index.html) page to generate a random Relay
