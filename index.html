@@ -5,87 +5,188 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Skylander Team Generator</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+	<title>Skylander Team Generator</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+<body class="is-preload">
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><strong>Skylander Team Generator</strong> by Ken Walker</a>
-									<ul class="icons">
-										<li><a href="https://twitter.com/kwalker" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="https://github.com/kenwalker/skylandersgen" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-								</header>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h2>Skylander team generator</h2>
-											<!-- <p>Generate a random Skylander team for speed running</p> -->
-										</header>
-										<p>Press the button below to generate a random team from the elements</p>
-										<ul class="actions">
-											<li><a href="#" class="button big">Generate Team</a></li>
-										</ul>
-									</div>
-									<!-- <span class="image object">
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="index.html" class="logo"><strong>Skylander Team Generator</strong> by Ken Walker</a>
+					<ul class="icons">
+						<li><a href="https://twitter.com/kwalker" class="icon brands fa-twitter"><span
+									class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/kenwalker/skylandersgen" class="icon brands fa-github"><span
+									class="label">Github</span></a></li>
+					</ul>
+				</header>
+
+				<!-- Banner -->
+				<section id="banner">
+					<div class="content">
+						<header>
+							<h2>Skylander team generator</h2>
+							<!-- <p>Generate a random Skylander team for speed running</p> -->
+						</header>
+						<p>Press the button below to generate a random team from the elements</p>
+						<ul class="actions">
+							<li><a href="#" onclick="generatePools();return false;" class="button big">Generate Team</a></li>
+						</ul>
+					</div>
+					<!-- <span class="image object">
 										<img src="images/pic10.jpg" alt="" />
 									</span> -->
-								</section>
+				</section>
 
-							<!-- Section -->
-								<section id="output">
-									<header class="major">
-										<h2>Generated Team</h2>
-									</header>
+				<div class="allresults" hidden>
+					<h2 class="smallbottommargin">Air Pool</h2>
+					<!-- <button class="noprint smallbottommargin primary icon fa-copy" onclick="copyCrownToClipboard()">Copy Crown candidates to CSV</button> -->
+					<table id="AIRTable" style="width:100%">
+						<tr>
+							<th class='left'>Name</th>
+							<th class='left'>Combined</th>
+							<th class='left'>First</th>
+							<th class='left'>Seccond</th>
+						</tr>
+					</table>
 
-								</section>
+					<h2 class="smallbottommargin">Earth Pool</h2>
+					<!-- <button class="noprint smallbottommargin primary icon fa-copy" onclick="copyCrownToClipboard()">Copy Crown candidates to CSV</button> -->
+					<table id="EARTHTable" style="width:100%">
+						<tr>
+							<th class='left'>Name</th>
+							<th class='left'>Combined</th>
+							<th class='left'>First</th>
+							<th class='left'>Seccond</th>
+						</tr>
+					</table>
 
-						</div>
-					</div>
+					<h2 class="smallbottommargin">Fire Pool</h2>
+					<!-- <button class="noprint smallbottommargin primary icon fa-copy" onclick="copyCrownToClipboard()">Copy Crown candidates to CSV</button> -->
+					<table id="FIRETable" style="width:100%">
+						<tr>
+							<th class='left'>Name</th>
+							<th class='left'>Combined</th>
+							<th class='left'>First</th>
+							<th class='left'>Seccond</th>
+						</tr>
+					</table>
 
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
 
-							<!-- Search -->
+					<h2 class="smallbottommargin">Life Pool</h2>
+					<!-- <button class="noprint smallbottommargin primary icon fa-copy" onclick="copyCrownToClipboard()">Copy Crown candidates to CSV</button> -->
+					<table id="LIFETable" style="width:100%">
+						<tr>
+							<th class='left'>Name</th>
+							<th class='left'>Combined</th>
+							<th class='left'>First</th>
+							<th class='left'>Seccond</th>
+						</tr>
+					</table>
 
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">Homepage</a></li>
-									</ul>
-								</nav>
 
-						</div>
-					</div>
+					<h2 class="smallbottommargin">Magic Pool</h2>
+					<!-- <button class="noprint smallbottommargin primary icon fa-copy" onclick="copyCrownToClipboard()">Copy Crown candidates to CSV</button> -->
+					<table id="MAGICTable" style="width:100%">
+						<tr>
+							<th class='left'>Name</th>
+							<th class='left'>Combined</th>
+							<th class='left'>First</th>
+							<th class='left'>Seccond</th>
+						</tr>
+					</table>
+
+
+					<h2 class="smallbottommargin">Tech Pool</h2>
+					<!-- <button class="noprint smallbottommargin primary icon fa-copy" onclick="copyCrownToClipboard()">Copy Crown candidates to CSV</button> -->
+					<table id="TECHTable" style="width:100%">
+						<tr>
+							<th class='left'>Name</th>
+							<th class='left'>Combined</th>
+							<th class='left'>First</th>
+							<th class='left'>Seccond</th>
+						</tr>
+					</table>
+
+
+					<h2 class="smallbottommargin">Undead Pool</h2>
+					<!-- <button class="noprint smallbottommargin primary icon fa-copy" onclick="copyCrownToClipboard()">Copy Crown candidates to CSV</button> -->
+					<table id="UNDEADTable" style="width:100%">
+						<tr>
+							<th class='left'>Name</th>
+							<th class='left'>Combined</th>
+							<th class='left'>First</th>
+							<th class='left'>Seccond</th>
+						</tr>
+					</table>
+
+
+					<h2 class="smallbottommargin">Water Pool</h2>
+					<!-- <button class="noprint smallbottommargin primary icon fa-copy" onclick="copyCrownToClipboard()">Copy Crown candidates to CSV</button> -->
+					<table id="WATERTable" style="width:100%">
+						<tr>
+							<th class='left'>Name</th>
+							<th class='left'>Combined</th>
+							<th class='left'>First</th>
+							<th class='left'>Seccond</th>
+						</tr>
+					</table>
+					<h2 class="smallbottommargin">Boss Pool</h2>
+					<!-- <button class="noprint smallbottommargin primary icon fa-copy" onclick="copyCrownToClipboard()">Copy Crown candidates to CSV</button> -->
+					<table id="BOSSTable" style="width:100%">
+						<tr>
+							<th class='left'>Name</th>
+							<th class='left'>Combined</th>
+							<th class='left'>First</th>
+							<th class='left'>Seccond</th>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<!-- Sidebar -->
+		<div id="sidebar">
+			<div class="inner">
+
+				<!-- Search -->
+
+				<!-- Menu -->
+				<nav id="menu">
+					<header class="major">
+						<h2>Menu</h2>
+					</header>
+					<ul>
+						<li><a href="index.html">Homepage</a></li>
+					</ul>
+				</nav>
 
 			</div>
+		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/skylander-data.js"></script>
-			<script src="assets/js/skylander-gen.js"></script>
+	</div>
 
-	</body>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/skylander-data.js"></script>
+	<script src="assets/js/skylander-gen.js"></script>
+
+</body>
+
 </html>

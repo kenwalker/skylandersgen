@@ -10,54 +10,110 @@ var swapCharacters = [
         Name: "Free Ranger",
         Element: "AIR",
         Category: "SWAP",
-        Image: "https://670kg2vddm296bnc42jcfvol-wpengine.netdna-ssl.com/wp-content/uploads/2014/02/BoomJet.png",
-        Page: "https://skylanderscharacterlist.com/boom-jet/",
+        Image: "",
+        Page: "",
     },
     {
         Name: "Doom Stone",
         Element: "EARTH",
         Category: "SWAP",
-        Image: "https://670kg2vddm296bnc42jcfvol-wpengine.netdna-ssl.com/wp-content/uploads/2014/02/BoomJet.png",
-        Page: "https://skylanderscharacterlist.com/boom-jet/",
+        Image: "",
+        Page: "",
     },
     {
         Name: "Rubble Rouser",
         Element: "EARTH",
         Category: "SWAP",
-        Image: "https://670kg2vddm296bnc42jcfvol-wpengine.netdna-ssl.com/wp-content/uploads/2014/02/BoomJet.png",
-        Page: "https://skylanderscharacterlist.com/boom-jet/",
+        Image: "",
+        Page: "",
+    },
+    {
+        Name: "Blast Zone",
+        Element: "FIRE",
+        Category: "SWAP",
+        Image: "",
+        Page: "",
+    },
+    {
+        Name: "Fire Kraken",
+        Element: "FIRE",
+        Category: "SWAP",
+        Image: "",
+        Page: "",
+    },
+    {
+        Name: "Grilla Drilla",
+        Element: "LIFE",
+        Category: "SWAP",
+        Image: "",
+        Page: "",
+    },
+    {
+        Name: "Stink Bomb",
+        Element: "LIFE",
+        Category: "SWAP",
+        Image: "",
+        Page: "",
+    },
+    {
+        Name: "Hoot Loop",
+        Element: "MAGIC",
+        Category: "SWAP",
+        Image: "",
+        Page: "",
+    },
+    {
+        Name: "Trap Shadow",
+        Element: "MAGIC",
+        Category: "SWAP",
+        Image: "",
+        Page: "",
+    },
+    {
+        Name: "Magna Charge",
+        Element: "TECH",
+        Category: "SWAP",
+        Image: "",
+        Page: "",
+    },
+    {
+        Name: "Spy Rise",
+        Element: "TECH",
+        Category: "SWAP",
+        Image: "",
+        Page: "",
+    },
+    {
+        Name: "Rattle Shake",
+        Element: "UNDEAD",
+        Category: "SWAP",
+        Image: "",
+        Page: "",
+    },
+    {
+        Name: "Night Shift",
+        Element: "UNDEAD",
+        Category: "SWAP",
+        Image: "",
+        Page: "",
+    },
+    {
+        Name: "Wash Buckler",
+        Element: "WATER",
+        Category: "SWAP",
+        Image: "",
+        Page: "",
+    },
+    {
+        Name: "Freeze Blade",
+        Element: "WATER",
+        Category: "SWAP",
+        Image: "",
+        Page: "",
     }
 ];
 
 var characters = [
-    {
-        Name: "Boom",
-        Element: "AIR",
-        Category: "SWAPTOP",
-        Image: "https://670kg2vddm296bnc42jcfvol-wpengine.netdna-ssl.com/wp-content/uploads/2014/02/BoomJet.png",
-        Page: "https://skylanderscharacterlist.com/boom-jet/",
-    },
-    {
-        Name: "Jet",
-        Element: "AIR",
-        Category: "SWAPBOTTOM",
-        Image: "https://670kg2vddm296bnc42jcfvol-wpengine.netdna-ssl.com/wp-content/uploads/2014/02/BoomJet.png",
-        Page: "https://skylanderscharacterlist.com/boom-jet/",
-    },
-    {
-        Name: "Free",
-        Element: "AIR",
-        Category: "SWAPTOP",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Ranger",
-        Element: "AIR",
-        Category: "SWAPBOTTOM",
-        Image: "",
-        Page: ""
-    },
     {
         Name: "Pop Thorn",
         Element: "AIR",
@@ -111,34 +167,6 @@ var characters = [
         Name: "Whirlwind",
         Element: "AIR",
         Category: "REGULAR",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Doom",
-        Element: "EARTH",
-        Category: "SWAPTOP",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Stone",
-        Element: "EARTH",
-        Category: "SWAPBOTTOM",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Rubble",
-        Element: "EARTH",
-        Category: "SWAPTOP",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Rouser",
-        Element: "EARTH",
-        Category: "SWAPBOTTOM",
         Image: "",
         Page: ""
     },
@@ -199,34 +227,6 @@ var characters = [
         Page: ""
     },
     {
-        Name: "Blast",
-        Element: "FIRE",
-        Category: "SWAPTOP",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Zone",
-        Element: "FIRE",
-        Category: "SWAPBOTTOM",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Fire",
-        Element: "FIRE",
-        Category: "SWAPTOP",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Kraken",
-        Element: "FIRE",
-        Category: "SWAPBOTTOM",
-        Image: "",
-        Page: ""
-    },
-    {
         Name: "Smolderdash",
         Element: "FIRE",
         Category: "REGULAR",
@@ -279,34 +279,6 @@ var characters = [
         Name: "Sunburn",
         Element: "FIRE",
         Category: "REGULAR",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Grilla",
-        Element: "LIFE",
-        Category: "SWAPTOP",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Drilla",
-        Element: "LIFE",
-        Category: "SWAPBOTTOM",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Stink",
-        Element: "LIFE",
-        Category: "SWAPTOP",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Bomb",
-        Element: "LIFE",
-        Category: "SWAPBOTTOM",
         Image: "",
         Page: ""
     },
@@ -367,34 +339,6 @@ var characters = [
         Page: ""
     },
     {
-        Name: "Hoot",
-        Element: "MAGIC",
-        Category: "SWAPTOP",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Loop",
-        Element: "MAGIC",
-        Category: "SWAPBOTTOM",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Trap",
-        Element: "MAGIC",
-        Category: "SWAPTOP",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Shadow",
-        Element: "MAGIC",
-        Category: "SWAPBOTTOM",
-        Image: "",
-        Page: ""
-    },
-    {
         Name: "Dune Bug",
         Element: "MAGIC",
         Category: "REGULAR",
@@ -447,34 +391,6 @@ var characters = [
         Name: "Wrecking Ball",
         Element: "MAGIC",
         Category: "REGULAR",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Magna",
-        Element: "TECH",
-        Category: "SWAPTOP",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Charge",
-        Element: "TECH",
-        Category: "SWAPBOTTOM",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Spy",
-        Element: "TECH",
-        Category: "SWAPTOP",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Rise",
-        Element: "TECH",
-        Category: "SWAPBOTTOM",
         Image: "",
         Page: ""
     },
@@ -535,34 +451,6 @@ var characters = [
         Page: ""
     },
     {
-        Name: "Rattle",
-        Element: "UNDEAD",
-        Category: "SWAPTOP",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Shake",
-        Element: "UNDEAD",
-        Category: "SWAPBOTTOM",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Night",
-        Element: "UNDEAD",
-        Category: "SWAPTOP",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Shift",
-        Element: "UNDEAD",
-        Category: "SWAPBOTTOM",
-        Image: "",
-        Page: ""
-    },
-    {
         Name: "Grim Creeper",
         Element: "UNDEAD",
         Category: "REGULAR",
@@ -615,34 +503,6 @@ var characters = [
         Name: "Hex",
         Element: "UNDEAD",
         Category: "REGULAR",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Wash",
-        Element: "WATER",
-        Category: "SWAPTOP",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Buckler",
-        Element: "WATER",
-        Category: "SWAPBOTTOM",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Freeze",
-        Element: "WATER",
-        Category: "SWAPTOP",
-        Image: "",
-        Page: ""
-    },
-    {
-        Name: "Freeze Blade",
-        Element: "WATER",
-        Category: "SWAPBOTTOM",
         Image: "",
         Page: ""
     },
@@ -704,7 +564,7 @@ var characters = [
     }
 ];
 
-var POOLS = [
+var POOL_COUNTS = [
     {
         Pool: "EARTH",
         Count: 5
@@ -736,9 +596,5 @@ var POOLS = [
     {
         Pool: "MAGIC",
         Count: 6
-    },
-    {
-        Pool: "BOSS",
-        Count: 5
     }
 ];
